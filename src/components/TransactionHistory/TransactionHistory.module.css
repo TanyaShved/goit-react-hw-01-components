@@ -1,0 +1,24 @@
+.history {
+  text-align: center;
+  width: 330px;
+
+  border-collapse: collapse;
+}
+
+.head {
+  background-color:  rgb(201, 192, 192);
+  color: white;
+}
+
+.item {
+  padding: 10px;
+  width: 170px;
+  border: 1px solid grey;
+}
+
+.row:nth-child(2n) {
+  background-color: lavender;
+}
+
+
+
