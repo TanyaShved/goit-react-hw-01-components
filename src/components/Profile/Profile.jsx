@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import s from './Profile.module.css';
-import defaultImage from '../default.jpg';
+import defaultImage from '../../default.jpg';
 
 const Profile = ({
     name,
@@ -42,11 +42,15 @@ const Profile = ({
     );
 };
 
+Profile.defaultProps = {
+  avatar: defaultImage, 
+};
+
 Profile.propTypes = {
     name: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired,
+    avatar: PropTypes.string,
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
     likes: PropTypes.number.isRequired,

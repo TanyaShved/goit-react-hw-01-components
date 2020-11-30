@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
-import randColor from './randColor';
+import randColor from '../../functions/randColor';
 
 const Statistics = ({title, stats}) => {
     return (
@@ -27,7 +27,7 @@ Statistics.propTypes = {
             label: PropTypes.string.isRequired,
             percentage: PropTypes.number.isRequired,
         }),
-    ),
+    ).isRequired,
 };
 
 
