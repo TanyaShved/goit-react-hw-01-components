@@ -6,7 +6,7 @@ const Profile = ({
     name,
     tag,
     location,
-    avatar = 'defaultImage',
+    avatar,
     followers,
     views,
     likes

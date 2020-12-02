@@ -3,7 +3,7 @@ import s from './FriendListItem.module.css';
 import defaultImage from '../../default.jpg';
 
 const FriendListItem = ({
-    avatar = 'defaultImage',
+    avatar,
     name,
     isOnline
 }) => {
